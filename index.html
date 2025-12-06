@@ -1,235 +1,312 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KDRX Studio - Fotografia</title>
-    <link rel="stylesheet" href="assets/style/style.css">
-    </head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axo Media</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">KDRX Studio</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">O nas</a></li>
-                <li><a href="#experience">Usługi</a></li>
-                <li><a href="#project">Portfolio</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-                <li class="dark-mode-toggle-container">
-                    <p>Jasny</p>
-                    <label class="switch">
-                        <input type="checkbox" id="darkModeToggleDesktop">
-                        <span class="slider round"></span>
-                    </label>
-                    <p>Ciemny</p>
-                </li>
-            </ul>
-        </div>
+      <div class="logo">Axo Media</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">O nas</a></li>
+          <li><a href="#experience">Usługi</a></li>
+          <li><a href="#project">Portfolio</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li class="dark-mode-toggle-container">
+            <p>Jasny</p>
+            <label class="switch">
+              <input type="checkbox" id="darkModeToggleDesktop" />
+              <span class="slider round"></span>
+            </label>
+            <p>Ciemny</p>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">KDRX Studio</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <ul>
-                    <li><a href="#about" onclick="toggleMenu()">O nas</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Usługi</a></li>
-                    <li><a href="#project" onclick="toggleMenu()">Portfolio</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
-                    <li class="dark-mode-toggle-container-mobile">
-                         <p>Jasny</p>
-                         <label class="switch">
-                            <input type="checkbox" id="darkModeToggleMobile">
-                            <span class="slider round"></span>
-                        </label>
-                        <p>Ciemny</p>
-                    </li>
-                </ul>
-            </div>
+      <div class="logo">Axo Media</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">O nas</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Usługi</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+            <li class="dark-mode-toggle-container-mobile">
+              <p>Jasny</p>
+              <label class="switch">
+                <input type="checkbox" id="darkModeToggleMobile" />
+                <span class="slider round"></span>
+              </label>
+              <p>Ciemny</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <section id="profile">
-        <div class="section_pic-container">
-            <img id="profile-pic" src="assets/img/KDRX.png" alt="KDRX Studio logo">
+      <div class="section_pic-container">
+        <img
+          id="profile-pic"
+          src="assets/img/Axo_logo_svg.svg"
+          alt="Axo Media logo"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Witamy w naszym świecie</p>
+        <h1 class="title">Axo Media</h1>
+        <p class="section_text_p2">Fotografia to nasza pasja</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='#project'">
+            Zobacz projekty
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Kontakt
+          </button>
         </div>
-        <div class="section_text">
-            <p class="section_text_p1">Witamy w naszym świecie</p>
-            <h1 class="title">KDRX Studio</h1>
-            <p class="section_text_p2">Fotografia to nasza pasja</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="location.href='#project'">
-                    Zobacz projekty
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">
-                    Kontakt
-                </button>
-            </div>
-            <div id="social_container">
-                <img src="assets/img/facebook.svg" alt="Facebook" class="icon" onclick="location.href='https://facebook.com/'">
-                <img src="assets/img/instagram.svg" alt="Instagram" class="icon" onclick="location.href='https://instagram.com/'">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" class="icon" onclick="location.href='https://linkedin.com/'">
-                <img src="assets/img/tiktok.svg" alt="tiktok" class="icon" onclick="location.href='https://tiktok.com/'">
-
-            </div>
+        <div id="social_container">
+          <img
+            src="assets/img/facebook.svg"
+            alt="Facebook"
+            class="icon"
+            onclick="location.href='https://facebook.com/'"
+          />
+          <img
+            src="assets/img/instagram.svg"
+            alt="Instagram"
+            class="icon"
+            onclick="location.href='https://instagram.com/'"
+          />
+          <img
+            src="assets/img/linkedin.svg"
+            alt="LinkedIn"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="assets/img/tiktok.svg"
+            alt="tiktok"
+            class="icon"
+            onclick="location.href='https://tiktok.com/'"
+          />
         </div>
+      </div>
     </section>
 
     <section id="about">
-        <p class="section_text_p1">Dowiedz się więcej</p>
-        <h1 class="title">O nas</h1>
-        <div class="section_container">
-            <div class="section_pic-container">
-                 <img src="https://placehold.co/400x400/CCCCCC/000000?text=O+Nas" alt="Zdjęcie zespołu" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <h3>Pasja i Kreatywność</h3>
-                        <p>Jesteśmy zespołem kreatywnych fotografów, dla których każde zdjęcie to opowieść. Wierzymy, że najlepsze kadry powstają z pasji i zaangażowania.</p>
-                    </div>
-                    <div class="details-container">
-                        <h3>Doświadczenie</h3>
-                         <p>Posiadamy wieloletnie doświadczenie w fotografii portretowej, eventowej i produktowej. Zaufaj profesjonalistom, którzy uwiecznią Twoje najważniejsze chwile.</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>W KDRX Studio łączymy nowoczesne techniki z artystycznym spojrzeniem, aby dostarczyć zdjęcia, które przekraczają oczekiwania. Naszym celem jest tworzenie unikalnych, ponadczasowych pamiątek. Każdy projekt traktujemy indywidualnie, wsłuchując się w potrzeby naszych klientów.</p>
-                </div>
-            </div>
+      <p class="section_text_p1">Dowiedz się więcej</p>
+      <h1 class="title">O nas</h1>
+      <div class="section_container">
+        <div class="section_pic-container">
+          <img
+            src="https://placehold.co/400x400/CCCCCC/000000?text=O+Nas"
+            alt="Zdjęcie zespołu"
+            class="about-pic"
+          />
         </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Pasja i Kreatywność</h3>
+              <p>
+                Jesteśmy zespołem kreatywnych fotografów, dla których każde
+                zdjęcie to opowieść. Wierzymy, że najlepsze kadry powstają z
+                pasji i zaangażowania.
+              </p>
+            </div>
+            <div class="details-container">
+              <h3>Doświadczenie</h3>
+              <p>
+                Posiadamy wieloletnie doświadczenie w fotografii portretowej,
+                eventowej i produktowej. Zaufaj profesjonalistom, którzy
+                uwiecznią Twoje najważniejsze chwile.
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              W AXO Media łączymy nowoczesne techniki z artystycznym
+              spojrzeniem, aby dostarczyć zdjęcia, które przekraczają
+              oczekiwania. Naszym celem jest tworzenie unikalnych,
+              ponadczasowych pamiątek. Każdy projekt traktujemy indywidualnie,
+              wsłuchując się w potrzeby naszych klientów.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="experience">
-        <p class="section_text_p1">Sprawdź, co oferujemy</p>
-        <h1 class="title">Nasze Usługi</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                 <div class="details-container">
-                    <h2 class="experience-sub-title">Fotografia Portretowa</h2>
-                    <div class="article-container">
-                        <article>
-                            <div>
-                                <h3>Sesje indywidualne</h3>
-                                <p>Podkreślimy Twój unikalny charakter.</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Sesje rodzinne</h3>
-                                <p>Uwiecznimy Wasze wspólne chwile.</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Fotografia biznesowa</h3>
-                                <p>Zbudujemy profesjonalny wizerunek Twojej firmy.</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section_text_p1">Sprawdź, co oferujemy</p>
+      <h1 class="title">Nasze Usługi</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Fotografia Portretowa</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Sesje indywidualne</h3>
+                  <p>Podkreślimy Twój unikalny charakter.</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Reportaże i Eventy</h2>
-                    <div class="article-container">
-                        <article>
-                            <div>
-                                <h3>Śluby i wesela</h3>
-                                <p>Magiczne chwile w pięknych kadrach.</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Imprezy firmowe</h3>
-                                <p>Dynamiczne relacje z każdego wydarzenia.</p>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <h3>Koncerty i festiwale</h3>
-                                <p>Energia i emocje w obiektywie.</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Sesje rodzinne</h3>
+                  <p>Uwiecznimy Wasze wspólne chwile.</p>
                 </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Fotografia biznesowa</h3>
+                  <p>Zbudujemy profesjonalny wizerunek Twojej firmy.</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Reportaże i Eventy</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Śluby i wesela</h3>
+                  <p>Magiczne chwile w pięknych kadrach.</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Imprezy firmowe</h3>
+                  <p>Dynamiczne relacje z każdego wydarzenia.</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Koncerty i festiwale</h3>
+                  <p>Energia i emocje w obiektywie.</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="project">
-        <p class="section_text_p1">Zobacz nasze ostatnie prace</p>
-        <h1 class="title">Portfolio</h1>
-        <div class="project-details-container">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="assets/img/produktowe/PZAW6126.jpg" alt="Projekt 1" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Fotografia Produktowa</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('assets/pages/portfolio.html')">
-                         Zobacz więcej
-                    </button>
-                </div>
-            </div>
-             <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="https://placehold.co/600x400/d3d3d3/000?text=Projekt+1" alt="Projekt 2" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Sesja Portretowa</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('assets/pages/portfolio.html')">
-                        Zobacz więcej
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="https://placehold.co/600x400/A9A9A9/FFF?text=Projekt+2" alt="Projekt 3" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Fotografia Eventowa</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="window.open('assets/pages/portfolio.html')">
-                         Zobacz więcej
-                    </button>
-                </div>
-            </div>
+      <p class="section_text_p1">Zobacz nasze ostatnie prace</p>
+      <h1 class="title">Portfolio</h1>
+      <div class="project-details-container">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="assets/img/produktowe/PZAW6126.jpg"
+              alt="Projekt 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Fotografia Produktowa
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('assets/pages/portfolio.html')"
+            >
+              Zobacz więcej
+            </button>
+          </div>
         </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="https://placehold.co/600x400/d3d3d3/000?text=Projekt+1"
+              alt="Projekt 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Sesja Portretowa</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('assets/pages/portfolio.html')"
+            >
+              Zobacz więcej
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="https://placehold.co/600x400/A9A9A9/FFF?text=Projekt+2"
+              alt="Projekt 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Fotografia Eventowa
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('assets/pages/portfolio.html')"
+            >
+              Zobacz więcej
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-        <p class="section_text_p1">Skontaktuj się z nami</p>
-        <h1 class="title">Napisz do nas</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/google/google-original.svg" alt="Email icon" class="icon contact-icon">
-                <p><a href="mailto:przykladowy.email@gmail.com">przykladowy.email@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
-            </div>
+      <p class="section_text_p1">Skontaktuj się z nami</p>
+      <h1 class="title">Napisz do nas</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/google/google-original.svg"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="mailto:przykladowy.email@gmail.com"
+              >przykladowy.email@gmail.com</a
+            >
+          </p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">O nas</a></li>
-                    <li><a href="#experience">Usługi</a></li>
-                    <li><a href="#project">Portfolio</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &copy; 2025 KDRX Studio. Wszelkie prawa zastrzeżone.</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#experience">Usługi</a></li>
+            <li><a href="#project">Portfolio</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &copy; 2025 Axo Media. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
     <script src="assets/script/app.js"></script>
-</body>
+  </body>
 </html>

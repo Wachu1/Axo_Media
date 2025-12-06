@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - KDRX Studio</title>
-    <!-- Upewnij się, że ścieżka do CSS jest poprawna -->
+    <title>Portfolio - AXO Media</title>
+
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
 
     <nav id="desktop-nav">
-        <!-- Zaktualizowana ścieżka do strony głównej -->
+
         <a href="../../index.html" class="logo-link"><div class="logo">KDRX Studio</div></a>
         <div>
             <ul class="nav-links">
-                <!-- Zaktualizowane ścieżki -->
+
                 <li><a href="../../index.html#about">O nas</a></li>
                 <li><a href="../../index.html#experience">Usługi</a></li>
                 <li><a href="#gallery" style="color: grey; text-decoration: underline; text-underline-offset: 0.5rem;">Portfolio</a></li>
@@ -33,7 +33,7 @@
 
     <nav id="hamburger-nav">
         <!-- Zaktualizowana ścieżka do strony głównej -->
-        <a href="../../index.html" class="logo-link"><div class="logo">KDRX Studio</div></a>
+        <a href="../../index.html" class="logo-link"><div class="logo">Axo Media</div></a>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -42,10 +42,10 @@
             </div>
             <div class="menu-links">
                 <ul>
-                    <!-- Zaktualizowane ścieżki -->
+
                     <li><a href="../../index.html#about" onclick="toggleMenu()">O nas</a></li>
                     <li><a href="../../index.html#experience" onclick="toggleMenu()">Usługi</a></li>
-                    <li><a href="#gall ery" onclick="toggleMenu()" style="color: grey;">Portfolio</a></li>
+                    <li><a href="#gallery" onclick="toggleMenu()" style="color: grey;">Portfolio</a></li>
                     <li><a href="../../index.html#contact" onclick="toggleMenu()">Kontakt</a></li>
                     <li class="dark-mode-toggle-container-mobile">
                          <p>Jasny</p>
@@ -100,7 +100,6 @@
             <div class="gallery-item" data-category="produktowe">
                 <img src="../img/produktowe/PZAW2075.jpg" alt="Zdjęcie produktowe 10">
             </div>
-            
             <div class="gallery-item" data-category="produktowe">
                 <img src="../img/produktowe/PZAW2198.jpg" alt="Zdjęcie produktowe 12">
             </div>
@@ -119,32 +118,29 @@
             <div class="gallery-item" data-category="produktowe">
                 <img src="../img/produktowe/PZAW6130.jpg" alt="Zdjęcie produktowe 17">
             </div>
-
-            <!-- Zdjęcia portretowe  -->
+            <!-- Zdjęcia portretowe -->
             <div class="gallery-item" data-category="portretowe">
                 <img src="https://placehold.co/600x800/d3d3d3/000?text=Portret+1" alt="Zdjęcie portretowe 1">
             </div>
             <div class="gallery-item" data-category="portretowe">
                 <img src="https://placehold.co/600x800/d3d3d3/000?text=Portret+2" alt="Zdjęcie portretowe 2">
             </div>
-
-            <!-- Zdjęcia eventowe  -->
+            <!-- Zdjęcia eventowe -->
             <div class="gallery-item" data-category="eventowe">
                 <img src="../img/eventowe/PZAW3522.jpg" alt="Zdjęcie z wydarzenia 1">
             </div>
             <div class="gallery-item" data-category="eventowe">
-                <img src="../img/eventowe/PZAW3535.jpg" alt="Zdjęcie z wydarzenia 1">
+                <img src="../img/eventowe/PZAW3535.jpg" alt="Zdjęcie z wydarzenia 2">
             </div>
             <div class="gallery-item" data-category="eventowe">
-                <img src="../img/eventowe/PZAW3656.jpg" alt="Zdjęcie z wydarzenia 1">
+                <img src="../img/eventowe/PZAW3656.jpg" alt="Zdjęcie z wydarzenia 3">
             </div>
             <div class="gallery-item" data-category="eventowe">
-                <img src="../img/eventowe/PZAW3690.jpg" alt="Zdjęcie z wydarzenia 1">
+                <img src="../img/eventowe/PZAW3690.jpg" alt="Zdjęcie z wydarzenia 4">
             </div>
             <div class="gallery-item" data-category="eventowe">
-                <img src="../img/eventowe/PZAW3694.jpg" alt="Zdjęcie z wydarzenia 1">
+                <img src="../img/eventowe/PZAW3694.jpg" alt="Zdjęcie z wydarzenia 5">
             </div>
-
         </div>
     </section>
     
@@ -159,27 +155,36 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &copy; 2025 KDRX Studio. Wszelkie prawa zastrzeżone.</p>
+        <p>Copyright &copy; 2025 AXO Media. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
-    <!-- ======== MODAL / LIGHTBOX DO WYŚWIETLANIA ZDJĘĆ ======== -->
-    <!-- Przeniesiono tutaj dla lepszej praktyki i uniknięcia problemów z z-index -->
     <div id="lightbox-modal" class="lightbox-modal">
         <span class="lightbox-close">&times;</span>
         <img class="lightbox-content" id="lightbox-image">
         <div id="caption"></div>
     </div>
-    <!-- ======================================================== -->
 
-    <!-- Główne skrypty strony (menu, tryb ciemny) -->
-    <!-- Upewnij się, że ścieżka jest poprawna -->
+
     <script src="../script/app.js"></script>
+    <script src="../script/modal.js"></script>
     
-    <!-- Skrypt do galerii i lightboxa -->
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // --- LOGIKA FILTROWANIA ---
+
+            const galleryGrid = document.querySelector('.gallery-grid');
+
+            const items = Array.from(galleryGrid.children);
+            
+
+            items.sort(() => Math.random() - 0.5);
+            
+
+            items.forEach(item => galleryGrid.appendChild(item));
+
+
             const filterButtons = document.querySelectorAll('.filter-btn');
+
             const galleryItems = document.querySelectorAll('.gallery-item');
 
             filterButtons.forEach(button => {
@@ -199,38 +204,32 @@
                 });
             });
 
-            // --- LOGIKA LIGHTBOXA (POWIĘKSZANIE ZDJĘĆ) ---
+
             const modal = document.getElementById('lightbox-modal');
             const modalImg = document.getElementById('lightbox-image');
             const closeBtn = document.querySelector('.lightbox-close');
 
-            // Funkcja otwierająca modal
             function openModal(e) {
-                modal.style.display = "block"; // Zmieniono z 'flex' na 'block', aby pasowało do nowych stylów CSS
+                modal.style.display = "block";
                 modalImg.src = e.currentTarget.querySelector('img').src;
             }
 
-            // Funkcja zamykająca modal
             function closeModal() {
                 modal.style.display = "none";
             }
             
-            // Dodaj event listener do każdego zdjęcia w galerii
             galleryItems.forEach(item => {
                 item.addEventListener('click', openModal);
             });
 
-            // Zamknij modal po kliknięciu na 'X'
             closeBtn.addEventListener('click', closeModal);
 
-            // Zamknij modal po kliknięciu poza zdjęciem (na tło)
             modal.addEventListener('click', (e) => {
                 if (e.target === modal) {
                     closeModal();
                 }
             });
 
-            // Zamknij modal po naciśnięciu klawisza Escape
             window.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape') {
                     closeModal();
