@@ -55,16 +55,16 @@
     </nav>
 
     <section id="profile">
-      <div class="section_pic-container">
-        <img
-          id="profile-pic"
-          src="assets/img/Axo_logo_svg.svg"
-          alt="Axo Media logo"
-        />
-      </div>
+    
       <div class="section_text">
         <p class="section_text_p1">Witamy w naszym świecie</p>
-        <h1 class="title">Axo Media</h1>
+        <div class="section_pic-container">
+          <img
+            id="profile-pic"
+            src="assets/img/Axo_media_logo.svg"
+            alt="Axo Media logo"
+          />
+        </div>
         <p class="section_text_p2">Fotografia to nasza pasja</p>
         <div class="btn-container">
           <button class="btn btn-color-2" onclick="location.href='#project'">
@@ -74,7 +74,7 @@
             Kontakt
           </button>
         </div>
-        <div id="social_container">
+        <!-- <div id="social_container">
           <img
             src="assets/img/facebook.svg"
             alt="Facebook"
@@ -99,7 +99,7 @@
             class="icon"
             onclick="location.href='https://tiktok.com/'"
           />
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -107,13 +107,13 @@
       <p class="section_text_p1">Dowiedz się więcej</p>
       <h1 class="title">O nas</h1>
       <div class="section_container">
-        <div class="section_pic-container">
+        <!-- <div class="section_pic-container">
           <img
             src="https://placehold.co/400x400/CCCCCC/000000?text=O+Nas"
             alt="Zdjęcie zespołu"
             class="about-pic"
           />
-        </div>
+        </div> -->
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -152,7 +152,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Fotografia Portretowa</h2>
+            <h2 class="experience-sub-title">Fotografia i Wideo</h2>
             <div class="article-container">
               <article>
                 <div>
@@ -162,8 +162,8 @@
               </article>
               <article>
                 <div>
-                  <h3>Sesje rodzinne</h3>
-                  <p>Uwiecznimy Wasze wspólne chwile.</p>
+                  <h3>Koncerty i festiwale</h3>
+                  <p>Energia i emocje w obiektywie.</p>
                 </div>
               </article>
               <article>
@@ -175,24 +175,24 @@
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Reportaże i Eventy</h2>
+            <h2 class="experience-sub-title">Strony internetowe</h2>
             <div class="article-container">
               <article>
                 <div>
-                  <h3>Śluby i wesela</h3>
-                  <p>Magiczne chwile w pięknych kadrach.</p>
+                  <h3>Witryny internetowe</h3>
+                  <p>Nowoczesne strony dopasowane do Twojej marki.</p>
                 </div>
               </article>
               <article>
                 <div>
-                  <h3>Imprezy firmowe</h3>
-                  <p>Dynamiczne relacje z każdego wydarzenia.</p>
+                  <h3>Strony dla firm</h3>
+                  <p>Profesjonalna prezentacja usług i oferty Twojego biznesu.</p>
                 </div>
               </article>
               <article>
                 <div>
-                  <h3>Koncerty i festiwale</h3>
-                  <p>Energia i emocje w obiektywie.</p>
+                  <h3>Responsywność i optymalizacja</h3>
+                  <p>Strony szybkie, mobilne i gotowe na sukces online.</p>
                 </div>
               </article>
             </div>
@@ -204,36 +204,38 @@
     <section id="project">
       <p class="section_text_p1">Zobacz nasze ostatnie prace</p>
       <h1 class="title">Portfolio</h1>
-      <div class="project-details-container">
-        <div class="details-container color-container">
+      <div class="project-details-container ">
+        <div class="details-container color-container project-size">
           <div class="article-container">
             <img
               src="assets/img/produktowe/PZAW6126.jpg"
               alt="Projekt 1"
               class="project-img"
+              
             />
           </div>
           <h2 class="experience-sub-title project-title">
-            Fotografia Produktowa
+            Fotografia 
           </h2>
           <div class="btn-container">
-            <button
+            <a href="assets/pages/portfolio.html">
+              <button
               class="btn btn-color-2 project-btn"
-              onclick="window.open('assets/pages/portfolio.html')"
-            >
+                >
               Zobacz więcej
             </button>
+            </a>     
           </div>
         </div>
-        <div class="details-container color-container">
+        <!-- <div class="details-container color-container">
           <div class="article-container">
             <img
               src="https://placehold.co/600x400/d3d3d3/000?text=Projekt+1"
               alt="Projekt 2"
               class="project-img"
             />
-          </div>
-          <h2 class="experience-sub-title project-title">Sesja Portretowa</h2>
+          </div> -->
+          <!-- <h2 class="experience-sub-title project-title">Sesja Portretowa</h2>
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
@@ -261,13 +263,13 @@
             >
               Zobacz więcej
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <p class="section_text_p1">Skontaktuj się z nami</p>
+
       <h1 class="title">Napisz do nas</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -277,18 +279,12 @@
             class="icon contact-icon"
           />
           <p>
-            <a href="mailto:przykladowy.email@gmail.com"
-              >przykladowy.email@gmail.com</a
+            <a href="mailto:axomedia.info@gmail.com"
+              >axomedia.info@gmail.com</a
             >
           </p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+  
         </div>
       </div>
     </section>

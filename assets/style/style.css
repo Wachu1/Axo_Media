@@ -389,8 +389,8 @@ article {
 /* === Sekcja Projekty (Project) === */
 .project-img {
   border-radius: 2rem;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
 }
 .project-title {
@@ -716,3 +716,7 @@ footer .nav-links {
     to {opacity: 1}
   }
   
+
+.project-size{
+  width: 50%;
+}
